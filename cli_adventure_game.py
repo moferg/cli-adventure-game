@@ -1,10 +1,17 @@
 # CLI Adventure Game - Marshall Ferguson - 6/2020
 
+# Imports
+
+import Character
+import Player 
+
 print("Welcome to the Command Line Adventure Game!")
 
-name = input("Please enter your character's name:     ")
-name = name.title()
-print("Hello {}!".format(name))
+player = Player.Player(0, [])
+
+player.name = input("Please enter your character's name:     ")
+player.name = player.name.title()
+print("Hello {}!".format(player.name))
 
 # TODO - create a shop the player can buy things from and sell things to
     # Player will be able to pick buy things back if needed
